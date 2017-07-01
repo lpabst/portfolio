@@ -1,21 +1,45 @@
 angular.module('app').controller('mainCtrl', function($scope){
 
-    $scope.mobileMenu = false;
-    $scope.showLearnSubheader = false; //desktop learn submenu
-    let learnSubMenu = false; //mobile learn submenu
+    let mobileMenu = false;
+    // $scope.showHam = true;
 
-    $scope.showMobileMenu = () => {
-        $scope.mobileMenu = true;
+    $scope.toggleMobileMenu = () => {
+        if (!mobileMenu){
+            mobileMenu = true;
+            $('.mobileMenu').css({
+                'height': '260px',
+            });
+            $('#line_one').css({
+                'transform': 'rotate(45deg)'
+            })
+            $('#line_three').css({
+                'transform': 'rotate(-45deg)'
+            })
+            $('#line_two').css({
+                'width': '0px'
+            })
+        }else{
+            mobileMenu = false;
+            $('.mobileMenu').css({
+                'height': '0px',
+            });
+            $('#line_one').css({
+                'transform': 'rotate(0deg)'
+            })
+            $('#line_three').css({
+                'transform': 'rotate(0deg)'
+            })
+            $('#line_two').css({
+                'width': '22px'
+            })
+        }
     }
 
-    $scope.hideMobileMenu = () => {
-        $scope.mobileMenu = false;
-        learnSubMenu = false;
-    }
+    // $scope.hideMobileMenu = () => {
+    //     $scope.mobileMenu = false;
+    //     learnSubMenu = false;
+    // }
 
-    $scope.hideLearnSubheader = () => {
-        $scope.showLearnSubheader = false;
-    }
 
 //slides out the mobile learn submenu
     $scope.showLearnSubMenu = () => {
