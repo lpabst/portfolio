@@ -19,25 +19,23 @@
             <div class='line' id='line_three'></div>
         </div>
 
-        <!--<div class='cross' ng-click='toggleMobileMenu()'>X</div>-->
-
         <section class='mobileMenu'>
             <ul class='mobile_nav'>
-                <li>Projects</li>
-                <li>Skills</li>
-                <li>About</li>
-                <li>Contact</li>
+                <li ng-click="nav(1)">Projects</li>
+                <li ng-click="nav(2)">Skills</li>
+                <li ng-click="nav(3)">About</li>
+                <li ng-click="nav(4)">Contact</li>
             </ul>
         </section>
     </header>
     
     <header class='desktop_header' ng-controller='mainCtrl'>
-        <p class='desktop_header_name'>Loren Pabst</p>
+        <p class='desktop_header_name' ng-click='nav(0)'>Loren Pabst</p>
         <ul class='desktop_nav'>
-            <li>Projects</li>
-            <li>Skills</li>
-            <li>About</li>
-            <li>Contact</li>
+            <li ng-click="nav(1)">Projects</li>
+            <li ng-click="nav(2)">Skills</li>
+            <li ng-click="nav(3)">About</li>
+            <li ng-click="nav(4)">Contact</li>
         </ul>
     </header>
 

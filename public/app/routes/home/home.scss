@@ -78,6 +78,7 @@
             -webkit-transition: all 1.2s;
             border-radius: 4px;
             overflow: hidden;
+            position: relative;
 
             .project_img{
                 width: 250px;
@@ -154,7 +155,7 @@
             }
 
             p{
-                width: 120px;
+                width: 110px;
                 text-align: center;
             }
             
