@@ -137,13 +137,13 @@
             overflow: hidden;
             color: #000;
             text-align: center;
-            border: 1px solid red;
             font-size: 16px;
             font-weight: bold;
 
             div{
                 width: 100px;
                 height: 100px;
+                margin: 8px 8px 8px 8px;
             }
             
             .angular_img{
@@ -162,7 +162,27 @@
             }
             
             .node_img{
-                background: url('./img/node_img.png')center no-repeat;
+                background: url('./img/node_img.jpeg')center no-repeat;
+                background-size: cover;
+            }
+            
+            .css_img{
+                background: url('./img/css_img.jpeg')center no-repeat;
+                background-size: cover;
+            }
+            
+            .html_img{
+                background: url('./img/html_img.jpeg')center no-repeat;
+                background-size: cover;
+            }
+            
+            .express_img{
+                background: url('./img/express_img.jpeg')center no-repeat;
+                background-size: cover;
+            }
+            
+            .jquery_img{
+                background: url('./img/jquery_img.jpeg')center no-repeat;
                 background-size: cover;
             }
         }
