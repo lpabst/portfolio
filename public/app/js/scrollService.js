@@ -3,8 +3,8 @@ angular.module("app")
 
     this.homeScroll = 0;
 
-    this.setHomeScroll = function(newScroll){
-        this.homeScroll = newScroll;
+    this.setHomeScroll = function(newValue){
+        this.homeScroll = newValue;
     }
 
 });
