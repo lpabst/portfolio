@@ -1,5 +1,12 @@
 angular.module("app")
-.controller("projectsCtrl", function($scope, $stateParams) {
+.controller("projectsCtrl", function($scope, $stateParams, scrollService) {
+
+    let autoScroll = function(){
+        document.body.scrollTop = 50;
+    }
+
+    autoScroll();
+
   
     $scope.image1, 
     $scope.image2, 

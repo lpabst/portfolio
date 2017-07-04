@@ -1,5 +1,12 @@
 angular.module("app")
-.controller("homeCtrl", function($scope) {
+.controller("homeCtrl", function($scope, scrollService) {
+
+    let setScroll = function(){
+        document.body.scrollTop = scrollService.homeScroll;
+        console.log(scrollService.homeScroll)
+    }
+
+    setScroll();
   
     $scope.submitContactEmail = function(){
         let body = $scope.contactContent;
@@ -17,5 +24,12 @@ angular.module("app")
         window.location.href = emailStr;
     }
 
+//keeps track of current scroll position for user to return to same spot on page
+    let findScroll = function(){
+        scrollService.setHomeScroll(document.body.scrollTop);
+        console.log(scrollService.homeScroll)
+    }
+
+    document.addEventListener('scroll', findScroll);
 
 });
