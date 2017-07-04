@@ -25,11 +25,13 @@
             transition: all 0.3s;
             -webkit-transition: all 0.3s;
             position: fixed;
-            right: 20px;
+            right: 15px;
             top: 70px;
+            font-family: 'Quicksand', sans-serif;
 
             @media(min-width: 700px){
                 font-size: 40px;
+                right: 120px;
             }
         }
 
@@ -42,6 +44,7 @@
             height: auto;
             margin-bottom: 15px;
             cursor: pointer;
+            box-shadow: -3px -3px 5px #888;
 
             @media(min-width: 700px){
                 width: 70%;
@@ -50,6 +53,7 @@
 
         .words{
             cursor: default;
+            box-shadow: none;
         }
     }
 }

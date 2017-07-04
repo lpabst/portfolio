@@ -54,14 +54,21 @@ angular.module('app').controller('mainCtrl', function($scope){
 //when window scrolls, header background shows up
     function changeHeaderCss(){
         var dHeader = $('.desktop_header');
+        var initials = $('.desktop_header_name');
         if (this.scrollY > 50){
             dHeader.css({
                 "background": "#333",
             });
+            initials.css({
+                "font-size": "28px",
+            })
         }else{
             dHeader.css({
                 "background": "none",
             });
+            initials.css({
+                "font-size": "35px"
+            })
         }
     }
     

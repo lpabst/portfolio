@@ -7,6 +7,7 @@
 
         @media(min-width: 700px){
             font-size: 38px;
+            font-family: 'Quicksand', sans-serif;
         }
     }
 }
@@ -34,6 +35,7 @@
         h1{
             margin: 0px 0px 0px 0px;
             font-size: 38px;
+            font-family: 'Quicksand', sans-serif;
 
             @media(min-width: 700px){
                 font-size: 48px;
@@ -42,6 +44,8 @@
 
         h3{
             text-decoration: underline;
+            font-weight: 100;
+            font-family: 'Jacques Francois', serif;
 
             @media(min-width: 700px){
                 font-size: 36px;
@@ -63,7 +67,7 @@
 }
 
 .home_projects{
-    background: #99d;
+    background: #E6E6E6;
 
     .projects_container{
         display: flex;
@@ -79,6 +83,7 @@
             border-radius: 4px;
             overflow: hidden;
             position: relative;
+            box-shadow: -2px -2px 4px #666;
 
             .project_img{
                 width: 250px;
@@ -157,6 +162,7 @@
             p{
                 width: 110px;
                 text-align: center;
+                font-family: 'Jacques Francois', serif;
             }
             
             .angular_img{
@@ -223,8 +229,12 @@
 }
 
 .home_about{
-    height: 650px;
-    background: #888;
+    height: 750px;
+    background: #E6E6E6;
+
+    @media(min-width: 700px){
+        height: 650px;
+    }
 
     .headshot_img{
         width: 220px;
@@ -258,17 +268,32 @@
 }
 
 .home_contact{
-    height: 500px;
-    background: #000;
+    height: 100vh;
+    background: url('./img/brown_desk.jpg')center no-repeat;
+    background-size: 165% 100%;
     color: #fff;
+    padding-top: 90px;
+
+    @media(min-width: 500px){
+        height: 150vh;
+        background-size: 140% 165%;
+        padding-top: 50px;
+    }
+
+    @media(min-width: 1000px){
+        height: calc(100vh - 68px);
+    }
 
     .contact_form{
         width: 80%;
         height: 350px;
         position: absolute;
         left: 10%;
-        top: 100px;
-        border: 1px solid #3acbe8;
+        top: 130px;
+
+        @media(min-width: 500px){
+            top: 100px;
+        }
 
         @media(min-width: 700px){
             width: 600px;
@@ -307,6 +332,7 @@
             bottom: 10px;
             left: calc(50% - 40px);
             color: black;
+            font-family: 'Quicksand', sans-serif;
         }
     }
 }
