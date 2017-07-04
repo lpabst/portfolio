@@ -20,8 +20,8 @@ angular.module("app")
         + 'control while working in a team!';
     }else if (projectId == 'calculator'){
         $scope.image1 = './img/calculator.png', 
-        $scope.image2 = './img/calculator.png', 
-        $scope.image3 = './img/calculator.png', 
+        $scope.image2 = './img/calculator2.png', 
+        $scope.image3 = './img/calculator3.png', 
         $scope.projectExplanation = 'This was one of my earlier projects. I wanted to build something that would allow me to learn and '
         + 'use Javascript in a new way, so I decided to build a fully functioning calculator using '
         + 'Angular. One of the challenges with this project was understanding how to allow the user '
@@ -36,17 +36,17 @@ angular.module("app")
         + 'of many Angular concepts. One of the challenges with this website was making it fully responsive on all '
         + 'of the views. I really enjoyed this project, I got to teach myself a few new languages, and put them into '
         + 'practice right away. Learning to do animations also helped me practice skills that will be useful in '
-        + 'the workplace!';
+        + 'the workplace! My tutorials each show the code used to create the animation, plus an explanation behind the code.';
     }else if (projectId == 'connect4'){
         $scope.image1 = './img/connect4.png', 
-        $scope.image2 = './img/connect4.png', 
-        $scope.image3 = './img/connect4.png', 
+        $scope.image2 = './img/connect4_game.png', 
+        $scope.image3 = './img/connect4_select.png', 
         $scope.projectExplanation = 'This is the most technical project I\'ve done yet. Building this app '
         + 'really helped my understanding of data flow, as well as programming concepts in general. Keeping '
         + 'track of the different variables and controlling the user experience through modular functions '
         + 'was a huge step in my learning curve! After building this project I took a React course, and I '
         + 'I think going through this beforehand helped me understand the React data flow and lifecycle quite '
-        + 'a bit better!';
+        + 'a bit better! I even built a complete, working AI that can play against the user!';
     }
 
 

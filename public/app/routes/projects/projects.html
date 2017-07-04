@@ -4,12 +4,16 @@
     
     <div class='modal_content'>
         <div class='close_modal' ui-sref='home'>x</div>
-        <img ng-src='{{ image1 }}' class='modal_img'>
-        <img ng-src='{{ image2 }}' class='modal_img'>
-        <img ng-src='{{ image3 }}' class='modal_img'>
-        <div class='modal_words'>
+        <a href='http://www.lorenpabst.com' target='_blank'>
+            <img ng-src='{{ image1 }}' class='modal_img'></a>
+        <a href='http://www.lorenpabst.com' target='_blank'>
+            <img ng-src='{{ image2 }}' class='modal_img'></a>
+        <a href='http://www.lorenpabst.com' target='_blank'>
+            <img ng-src='{{ image3 }}' class='modal_img'></a>
+        <div class='modal_img words'>
             {{ projectExplanation }}
         </div>
+        <p class='modal_img words'>Click any one of the images to see this project firsthand!</p>
     </div>
 
 </section>

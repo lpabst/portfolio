@@ -38,21 +38,15 @@
             width: 280px;
             height: auto;
             margin-bottom: 15px;
+            cursor: pointer;
 
             @media(min-width: 700px){
                 width: 70%;
             }
         }
 
-        .modal_words{
-            width: 90%;
-            position: absolute;
-            left: 5%;
-
-            @media(min-width: 700px){
-                width: 60%;
-                left: 20%;
-            }
+        .words{
+            cursor: default;
         }
     }
 }
