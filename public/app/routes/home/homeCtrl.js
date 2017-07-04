@@ -17,8 +17,5 @@ angular.module("app")
         window.location.href = emailStr;
     }
 
-    $scope.linkDevMountain = function(){
-        window.open('http://www.devmountain.com');
-    }
 
 });
