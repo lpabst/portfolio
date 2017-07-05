@@ -55,5 +55,17 @@
             cursor: default;
             box-shadow: none;
         }
+
+        .project_link{
+            font-size: 22px;
+            font-weight: bold;
+            cursor: pointer;
+            font-family: 'Quicksand', sans-serif;
+
+            a{
+                text-decoration: none;
+                color: black;
+            }
+        }
     }
 }
