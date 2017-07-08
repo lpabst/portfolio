@@ -12,13 +12,15 @@ angular.module("app")
     $scope.image2, 
     $scope.image3, 
     $scope.projectExplanation;
+    $scope.externalLink;
     let projectId = $stateParams.projectid;
     console.log($stateParams)
 
     if (projectId == 'youtube'){
-        $scope.image1 = './img/youtube_plus.png', 
-        $scope.image2 = './img/youtube_search.png', 
-        $scope.image3 = './img/youtube_home.png', 
+        $scope.externalLink = 'http://ytclone.lorenpabst.com';
+        $scope.image1 = './img/youtube_plus.png'; 
+        $scope.image2 = './img/youtube_search.png'; 
+        $scope.image3 = './img/youtube_home.png';
         $scope.projectExplanation = 'We built a YouTube clone in React for a group project. '
         + 'Here we see pictures of the +YouTube page, the search results page, and the home '
         + 'page. One of the challenges of this project was learning to use the YouTube API in '
@@ -26,6 +28,7 @@ angular.module("app")
         + 'experience where I not only solidified my understanding of React, but learned Github version '
         + 'control while working in a team!';
     }else if (projectId == 'calculator'){
+        $scope.externalLink = 'http://tutorials.lorenpabst.com/#/showcase';
         $scope.image1 = './img/calculator.png', 
         $scope.image2 = './img/calculator2.png', 
         $scope.image3 = './img/calculator3.png', 
@@ -35,6 +38,7 @@ angular.module("app")
         + 'to type a long string of commands and then evaluate what they entered at the end. I had a '
         + 'blast building this one, and it helped me learn quite a bit about Javascript!';
     }else if (projectId == 'tutorials'){
+        $scope.externalLink = 'http://tutorials.lorenpabst.com';
         $scope.image1 = './img/tut_angular.png', 
         $scope.image2 = './img/tut_jquery.png', 
         $scope.image3 = './img/tut_greensock_code.png', 
@@ -45,6 +49,7 @@ angular.module("app")
         + 'practice right away. Learning to do animations also helped me practice skills that will be useful in '
         + 'the workplace! My tutorials each show the code used to create the animation, plus an explanation behind the code.';
     }else if (projectId == 'connect4'){
+        $scope.externalLink = 'http://tutorials.lorenpabst.com/#/showcase';
         $scope.image1 = './img/connect4.png', 
         $scope.image2 = './img/connect4_game.png', 
         $scope.image3 = './img/connect4_select.png', 

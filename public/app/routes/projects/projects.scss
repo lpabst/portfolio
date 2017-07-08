@@ -13,7 +13,7 @@
         position: relative;
 
         @media(min-width: 700px){
-            padding-left: 20%;
+            padding-left: 10%;
         }
 
         .close_modal{
@@ -43,17 +43,19 @@
             width: 280px;
             height: auto;
             margin-bottom: 15px;
+            margin-right: 20px;
             cursor: pointer;
             box-shadow: -3px -3px 5px #888;
 
             @media(min-width: 700px){
-                width: 70%;
+                width: 320px;
             }
         }
 
         .words{
             cursor: default;
             box-shadow: none;
+            width: 70%;
         }
 
         .project_link{
