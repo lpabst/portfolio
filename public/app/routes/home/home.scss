@@ -101,6 +101,40 @@
                 color: #eee;
             }
 
+            .project_hover{
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                left: 0;
+                top: 0;
+                padding-top: 40px;
+                background: #ddd;
+                opacity: 0;
+                transition: all 0.5s;
+                -webkit-transition: all 0.5s;
+
+                p{
+                    height: 30px;
+                    font-size: 22px;
+                    font-weight: bold;
+                    cursor: pointer;
+                }
+
+                a{
+                    text-decoration: none;
+                    color: black;
+                }
+
+                p:hover{
+                    border-top: 1px solid black;
+                    border-bottom: 1px solid black;
+                }
+            }
+
+            .project_hover:hover{
+                opacity: 0.9;
+            }
+
             .youtube_img{
                 background: url('./img/youtube_video.png')center no-repeat;
                 background-size: cover;
