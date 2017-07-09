@@ -1,0 +1,25 @@
+
+<!--Modals for the individual projects-->
+<section class='project_modal'>
+    
+    <div class='modal_content'>
+        <div class='close_modal' ui-sref='home'>x</div>
+        <a ng-href='{{ externalLink }}' target='_blank'>
+            <img ng-src='{{ image1 }}' class='modal_img'></a>
+        <a href='{{ externalLink }}' target='_blank'>
+            <img ng-src='{{ image2 }}' class='modal_img'></a>
+        <a href='{{ externalLink }}' target='_blank'>
+            <img ng-src='{{ image3 }}' class='modal_img'></a>
+        <div class='modal_img words'>
+            {{ projectExplanation }}
+        </div>
+        <p class='modal_img words'>You can check out this project 
+            <span class='project_link'>
+                <a href='{{ externalLink }}' target='_blank'>
+                    HERE!
+                </a>
+            </span>
+        </p>
+    </div>
+
+</section>

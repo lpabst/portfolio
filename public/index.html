@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!--<link rel="stylesheet" href="./app/normalize.css">-->
+    <link href="https://fonts.googleapis.com/css?family=Bad+Script|Cedarville+Cursive|Jacques+Francois|Lato|Quicksand|Tienne" rel="stylesheet">
+    <link rel="stylesheet" href="./bundle.css">
+  </head>
+
+  <body>
+
+    <header class='mobile_header' ng-controller='mainCtrl'>
+        <div class='ham' ng-click='toggleMobileMenu()'>
+            <div class='line' id='line_one'></div>
+            <div class='line' id='line_two'></div>
+            <div class='line' id='line_three'></div>
+        </div>
+
+        <section class='mobileMenu'>
+            <ul class='mobile_nav'>
+                <li ng-click="nav(1)">Projects</li>
+                <li ng-click="nav(2)">Skills</li>
+                <li ng-click="nav(3)">About</li>
+                <li ng-click="nav(4)">Contact</li>
+            </ul>
+        </section>
+    </header>
+    
+    <header class='desktop_header' ng-controller='mainCtrl'>
+        <p class='desktop_header_name' ng-click='nav(0)'>LP</p>
+        <ul class='desktop_nav'>
+            <li ng-click="nav(1)">Projects</li>
+            <li ng-click="nav(2)">Skills</li>
+            <li ng-click="nav(3)">About</li>
+            <li ng-click="nav(4)">Contact</li>
+        </ul>
+    </header>
+
+    <ui-view>
+<!--Views go here-->
+    </ui-view>
+
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.js"
+    integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+    crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.js"></script>
+    <script src="./bundle.js"></script>
+  </body>
+
+</html>

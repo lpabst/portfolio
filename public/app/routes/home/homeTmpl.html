@@ -1,0 +1,186 @@
+
+<section class='home_wrapper'>
+
+    <section class='home_landing_section' id='home_landing_section'>
+        <div class='home_landing_content'>
+            <h1>LOREN PABST</h1>
+            <h3>Web Developer</h3>
+        </div>
+    </section>
+
+    <section class='home_section home_projects' id='home_projects'>
+        <h2 ng-click='findScroll()'>PROJECTS</h2>
+        <div class='home_section_container projects_container'>
+
+            <div class='project_container'>
+                <div class='project_img youtube_img'></div>
+                <div class='project_info'>
+                    <p>YouTube Clone</p>
+                </div>
+                <div class='project_hover'>
+                    <p ui-sref='projects({projectid: "youtube"})' ng-click="setReturnScroll(0)">Learn More</p>
+                    <a href='https://youtu.be/Y4Xe7eXlc6E' target='_blank'>
+                        <p>Video WalkThrough</p>
+                    </a>
+                    <a href='http://ytclone.lorenpabst.com/' target='_blank'>
+                        <p>See It Here</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class='project_container'>
+                <div class='project_img calculator_img'></div>
+                <div class='project_info'>
+                    <p>Calculator In Angular</p>
+                </div>
+                <div class='project_hover'>
+                    <p ui-sref='projects({projectid: "calculator"})' ng-click="setReturnScroll(260)">Learn More</p>
+                    <a href='https://youtu.be/3xlnlM-I5Ck' target='_blank'>
+                        <p>Video WalkThrough</p>
+                    </a>
+                    <a href='http://tutorials.lorenpabst.com/#/showcase' target='_blank'>
+                        <p>See It Here</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class='project_container'>
+                <div class='project_img tutorials_img'></div>
+                <div class='project_info'>
+                    <p>Animation Tutorials</p>
+                </div>
+                <div class='project_hover'>
+                    <p ui-sref='projects({projectid: "tutorials"})' ng-click="setReturnScroll(520)">Learn More</p>
+                    <a href='https://youtu.be/hhMDpzL-k1A' target='_blank'>
+                        <p>Video WalkThrough</p>
+                    </a>
+                    <a href='http://tutorials.lorenpabst.com/#/' target='_blank'>
+                        <p>See It Here</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class='project_container'>
+                <div class='project_img connect4_img'></div>
+                <div class='project_info'>
+                    <p>Connect4 With AI</p>
+                </div>
+                <div class='project_hover'>
+                    <p ui-sref='projects({projectid: "connect4"})' ng-click="setReturnScroll(780)">Learn More</p>
+                    <a href='https://youtu.be/V4g4itMcg_8' target='_blank'>
+                        <p>Video WalkThrough</p>
+                    </a>
+                    <a href='http://tutorials.lorenpabst.com/#/showcase' target='_blank'>
+                        <p>See It Here</p>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class='home_section home_skills' id='home_skills'>
+
+        <h2>SKILLS</h2>
+        <div class='home_section_container skills_container'>
+
+            <div class='skill_container'>
+                <div class='angular_img'></div>
+                <p>Angular</p>
+            </div>
+
+            <div class='skill_container'>
+                <div class='react_img'></div>
+                <p>React</p>
+            </div>
+
+            <div class='skill_container'>
+                <div class='javascript_img'></div>
+                <p>Javascript</p>
+            </div>
+
+            <div class='skill_container'>
+                <div class='node_img'></div>
+                <p>Node</p>
+            </div>
+
+            <div class='skill_container'>
+                <div class='css_img'></div>
+                <p>CSS</p>
+            </div>
+
+            <div class='skill_container'>
+                <div class='html_img'></div>
+                <p>HTML</p>
+            </div>
+
+            <div class='skill_container'>
+                <div class='express_img'></div>
+                <p>Express</p>
+            </div>
+
+            <div class='skill_container'>
+                <div class='jquery_img'></div>
+                <p>JQuery</p>
+            </div>
+
+            <div class='skill_container'>
+                <div class='sass_img'></div>
+                <p>Sass</p>
+            </div>
+
+            <div class='skill_container'>
+                <div class='git_img'></div>
+                <p>Git</p>
+            </div>
+
+            <div class='skill_container'>
+                <div class='responsive_img'></div>
+                <p>Responsive Design</p>
+            </div>
+
+            <div class='skill_container'>
+                <div class='sql_img'></div>
+                <p>SQL</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class='home_section home_about' id='home_about'>
+
+        <h2>ABOUT ME</h2>
+
+        <div class='headshot_img'></div>
+
+        <p class='about_paragraph'>
+            I was born and raised in Utah. I attended Utah State
+            University and earned a bachelor's degree in Business 
+            Administration. After working in management at America
+            First Credit Union for 3 years, I decided to pursue my
+            passion of web development, and attended a 13 week
+            immersive coding program at 
+            <a href='http://devmountain.com' target='_blank'>DevMountain</a>. 
+            I live with my wife and two cats in the Provo Area. I enjoy
+            coding, exercising, reading, and seeing new places!
+        </p>
+
+    </section>
+
+    <section class='home_section home_contact' id='home_contact'>
+
+        <h2>CONTACT ME</h2>
+
+        <form class='contact_form' ng-submit="submitContactEmail()">
+            <input class='firstname' placeholder='Your Name' ng-model='contactName' />
+            <input class='lastname' placeholder='Subject/Topic' ng-model='contactSubject' />
+            <input class='email_phone' placeholder='Your Email or Phone' ng-model='contactEmailOrPhone' />
+            <textarea class='message_content' placeholder='What would you like to discuss?' ng-model='contactContent' />
+            <button class='send_btn'>Send</button>
+        </form>
+
+    </section>
+
+</section>
+

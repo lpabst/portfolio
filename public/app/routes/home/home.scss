@@ -1,0 +1,373 @@
+
+.home_wrapper{
+    width: 100%;
+    position: relative;
+
+    h2{
+
+        @media(min-width: 700px){
+            font-size: 38px;
+            font-family: 'Quicksand', sans-serif;
+        }
+    }
+}
+
+.home_landing_section{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: url('./img/landing_background.jpg')center no-repeat;
+    background-size: cover;
+
+    .home_landing_content{
+        width: 60%;
+        height: 40%;
+        position: absolute;
+        left: 20%;
+        top:30%;
+        text-align: center;
+        color: #eee;
+
+        @media(min-width: 700px){
+            top: 40%;
+        }
+
+        h1{
+            margin: 0px 0px 0px 0px;
+            font-size: 38px;
+            font-family: 'Quicksand', sans-serif;
+
+            @media(min-width: 700px){
+                font-size: 48px;
+            }
+        }
+
+        h3{
+            margin-top: 20px;
+            font-weight: 100;
+            font-family: 'Quicksand', sans-serif;
+
+            @media(min-width: 700px){
+                font-size: 36px;
+            }
+        }
+    }
+}
+
+.home_section{
+    width: 100%;
+    position: relative;
+    text-align: center;
+    padding: 40px 40px 110px 40px;
+
+    .home_section_container{
+        width: 100%;
+        position: relative;
+    }
+}
+
+.home_projects{
+    background: #E6E6E6;
+
+    .projects_container{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        .project_container{
+            width: 250px;
+            height: 250px;
+            margin: 10px 10px 10px 10px;
+            transition: all 1.2s;
+            -webkit-transition: all 1.2s;
+            border-radius: 4px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: -2px -2px 4px #666;
+
+            .project_img{
+                width: 250px;
+                height: 175px;
+                cursor: pointer;
+            }
+
+            .project_info{
+                width: 250px;
+                height: 75px;
+                background: #333;
+                line-height: 75px;
+                font-size: 20px;
+                font-weight: bold;
+                color: #eee;
+            }
+
+            .project_hover{
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                left: 0;
+                top: 0;
+                padding-top: 40px;
+                background: #ddd;
+                opacity: 0;
+                transition: all 0.5s;
+                -webkit-transition: all 0.5s;
+
+                p{
+                    height: 30px;
+                    font-size: 22px;
+                    font-weight: bold;
+                    cursor: pointer;
+                }
+
+                a{
+                    text-decoration: none;
+                    color: black;
+                }
+
+                p:hover{
+                    border-top: 1px solid black;
+                    border-bottom: 1px solid black;
+                }
+            }
+
+            .project_hover:hover{
+                opacity: 0.9;
+            }
+
+            .youtube_img{
+                background: url('./img/youtube_video.png')center no-repeat;
+                background-size: cover;
+            }
+
+            .calculator_img{
+                background: url('./img/calculator.png')center no-repeat;
+                background-size: cover;
+            }
+
+            .tutorials_img{
+                background: url('./img/tutorials_home.png')center no-repeat;
+                background-size: cover;
+            }
+
+            .connect4_img{
+                background: url('./img/connect_four.png')center no-repeat;
+                background-size: cover;
+            }
+        }
+
+        .project_container:hover{
+            transform: scale(1.1);
+        }
+    }
+}
+
+.home_skills{
+    background: #fff;
+
+    .skills_container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding-top: 20px;
+
+        @media(min-width: 1000px){
+            padding: 20px 100px 0px 100px;
+        }
+
+        .skill_container{
+            width: 110px;
+            height: 150px;
+            color: #000;
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+            margin: 8px 18px 8px 18px;
+
+            @media(min-width: 700px){
+                margin: 10px 30px 10px 30px;
+            }
+
+            div{
+                width: 110px;
+                height: 110px;
+            }
+
+            p{
+                width: 110px;
+                text-align: center;
+                font-family: 'Jacques Francois', serif;
+            }
+            
+            .angular_img{
+                background: url('./img/angular_img.png')center no-repeat;
+                background-size: cover;
+            }
+            
+            .react_img{
+                background: url('./img/react_img.png')center no-repeat;
+                background-size: cover;
+            }
+            
+            .javascript_img{
+                background: url('./img/javascript_img.png')center no-repeat;
+                background-size: cover;
+            }
+            
+            .node_img{
+                background: url('./img/node_img.jpeg')center no-repeat;
+                background-size: cover;
+            }
+            
+            .css_img{
+                background: url('./img/css_img.png')center no-repeat;
+                background-size: cover;
+            }
+            
+            .html_img{
+                background: url('./img/html_img.png')center no-repeat;
+                background-size: cover;
+            }
+            
+            .express_img{
+                background: url('./img/express_img.png')center no-repeat;
+                background-size: cover;
+            }
+            
+            .jquery_img{
+                background: url('./img/jquery_img.png')center no-repeat;
+                background-size: cover;
+            }
+            
+            .sass_img{
+                background: url('./img/sass_img.png')center no-repeat;
+                background-size: cover;
+            }
+            
+            .git_img{
+                background: url('./img/git_img.png')center no-repeat;
+                background-size: cover;
+            }
+            
+            .responsive_img{
+                background: url('./img/responsive_img.png')center no-repeat;
+                background-size: cover;
+            }
+            
+            .sql_img{
+                background: url('./img/sql_img.png')center no-repeat;
+                background-size: cover;
+            }
+        }
+    }
+}
+
+.home_about{
+    height: 750px;
+    background: #E6E6E6;
+
+    @media(min-width: 700px){
+        height: 650px;
+    }
+
+    .headshot_img{
+        width: 220px;
+        height: 260px;
+        background: url('./img/headshot_img.jpg')center no-repeat;
+        background-size: cover;
+        position: absolute;
+        left: calc(50% - 110px);
+        top: 120px;
+        border-radius: 50%;
+
+        @media(min-width: 700px){
+            transform: scale(1.3);
+            top: 150px
+        }
+    }
+
+    .about_paragraph{
+        width: 80%;
+        position: absolute;
+        top: 430px;
+        left: 12%;
+        text-align: left;
+
+        @media(min-width: 700px){
+            top: 480px;
+            left: 22%;
+            width: 60%;
+        }
+    }
+}
+
+.home_contact{
+    height: 100vh;
+    background: url('./img/brown_desk.jpg')center no-repeat;
+    background-size: 165% 100%;
+    color: #fff;
+    padding-top: 90px;
+
+    @media(min-width: 500px){
+        height: 150vh;
+        background-size: 140% 165%;
+        padding-top: 50px;
+    }
+
+    @media(min-width: 1000px){
+        height: calc(100vh - 68px);
+    }
+
+    .contact_form{
+        width: 80%;
+        height: 350px;
+        position: absolute;
+        left: 10%;
+        top: 130px;
+
+        @media(min-width: 500px){
+            top: 100px;
+        }
+
+        @media(min-width: 700px){
+            width: 600px;
+            left: calc(50% - 300px);
+        }
+
+        input, textarea{
+            width: 90%;
+            height: 40px;
+            position: absolute;
+            left: 5%;
+            color: black;
+        }
+
+        .firstname{
+            top: 10px;
+        }
+
+        .lastname{
+            top: 60px;
+        }
+
+        .email_phone{
+            top: 110px;
+        }
+
+        .message_content{
+            top: 160px;
+            height: 130px;
+        }
+
+        .send_btn{
+            width: 80px;
+            height: 40px;
+            position: absolute;
+            bottom: 10px;
+            left: calc(50% - 40px);
+            color: black;
+            font-family: 'Quicksand', sans-serif;
+        }
+    }
+}
+
