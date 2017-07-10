@@ -74,6 +74,16 @@
         justify-content: space-around;
         flex-wrap: wrap;
 
+        @media(min-width: 850px){
+            width: 800px;
+            margin: 0 auto;
+        }
+
+        @media(min-width: 1200px){
+            width: 1200px;
+            margin: 0 auto;
+        }
+
         .project_container{
             width: 250px;
             height: 250px;
