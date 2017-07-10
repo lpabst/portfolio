@@ -172,7 +172,14 @@
         padding-top: 20px;
 
         @media(min-width: 1000px){
+            width: 1000px;
+            margin: 0 auto;
             padding: 20px 100px 0px 100px;
+        }
+
+        @media(min-width:1400px){
+            width: 1300px;
+            margin: 0 auto;
         }
 
         .skill_container{
@@ -200,7 +207,7 @@
             }
             
             .angular_img{
-                background: url('./img/angular_img.png')center no-repeat;
+                background: url('./img/angluar_img.png')center no-repeat;
                 background-size: cover;
             }
             
