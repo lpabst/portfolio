@@ -74,6 +74,16 @@
         justify-content: space-around;
         flex-wrap: wrap;
 
+        @media(min-width: 850px){
+            width: 800px;
+            margin: 0 auto;
+        }
+
+        @media(min-width: 1200px){
+            width: 1200px;
+            margin: 0 auto;
+        }
+
         .project_container{
             width: 250px;
             height: 250px;
@@ -172,7 +182,14 @@
         padding-top: 20px;
 
         @media(min-width: 1000px){
+            width: 1000px;
+            margin: 0 auto;
             padding: 20px 100px 0px 100px;
+        }
+
+        @media(min-width:1400px){
+            width: 1300px;
+            margin: 0 auto;
         }
 
         .skill_container{
@@ -200,7 +217,7 @@
             }
             
             .angular_img{
-                background: url('./img/angular_img.png')center no-repeat;
+                background: url('./img/angluar_img.png')center no-repeat;
                 background-size: cover;
             }
             
@@ -367,6 +384,61 @@
             left: calc(50% - 40px);
             color: black;
             font-family: 'Quicksand', sans-serif;
+        }
+    }
+}
+
+.footer{
+    width: 100%;
+    height: 50px;
+    background: #222;
+    position: relative;
+
+    ul{
+        width: 300px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+
+        li{
+            width: 80px;
+            height: 50px;
+            color: white;
+            padding-top: 15px;
+        }
+
+        a{
+            text-decoration: none;
+            color: white;
+        }
+
+        div{            
+            cursor: pointer;
+        }
+
+        div:hover{
+            transform: scale(1.1);
+        }
+
+        .linkedin{
+            width: 32px;
+            height: 32px;
+            border-radius: 2px;
+            position: absolute;
+            top: 7px;
+            background: url('./img/linkedin.png') center no-repeat;
+            background-size: cover;
+        }
+
+        .github{
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            position: absolute;
+            top: 7px;
+            background: url('./img/github.png') center no-repeat;
+            background-size: cover;
         }
     }
 }
