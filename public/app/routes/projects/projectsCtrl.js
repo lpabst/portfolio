@@ -59,6 +59,17 @@ angular.module("app")
         + 'was a huge step in my learning curve! After building this project I took a React course, and I '
         + 'I think going through this beforehand helped me understand the React data flow and lifecycle quite '
         + 'a bit better! I even built a complete, working AI that can play against the user!';
+    }else if (projectId == 'apple'){
+        $scope.externalLink = 'http://apple.lorenpabst.com/';
+        $scope.image1 = './img/apple_responsive.png', 
+        $scope.image2 = './img/apple_about.png', 
+        $scope.image3 = './img/apple_products.png', 
+        $scope.projectExplanation = 'I really wanted to practice replicating a design from scratch using '
+        + 'CSS. This project really demonstrates that ability, as it\'s a recreation of the apple.com '
+        + 'homepage using JSX and CSS. I built it using React components to continue practicing '
+        + 'React. I also made it fully responsive, so it functions the same as the apple.com homepage on all '
+        + 'screensizes, from mobile to desktop. The first image shows the mobile view, the middle image shows '
+        + 'the project info box that expands when you click on it, and the last image shows the current apple products.';
     }
 
 

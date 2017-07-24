@@ -71,7 +71,7 @@
 
     .projects_container{
         display: flex;
-        justify-content: space-around;
+        justify-content: left;
         flex-wrap: wrap;
 
         @media(min-width: 850px){
@@ -162,6 +162,11 @@
 
             .connect4_img{
                 background: url('./img/connect4.png')center no-repeat;
+                background-size: cover;
+            }
+
+            .apple_img{
+                background: url('./img/apple.png')center no-repeat;
                 background-size: cover;
             }
         }
